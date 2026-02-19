@@ -1,0 +1,115 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link {
+  color: #0ea5e9;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.App-link:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+/* Bootstrap overrides */
+.navbar {
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  color: #fbbf24 !important;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%) !important;
+  color: #fff !important;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.table thead th {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f5f9;
+}
+.table-hover tbody tr:hover {
+  background-color: #e0e7ff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+  color: #fbbf24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #6366f1;
+  font-weight: 700;
+}
+
+/* Favicon and logo tweaks */
+.octofit-logo {
+  height: 48px;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
